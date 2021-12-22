@@ -17,3 +17,8 @@ p {
 .btn-primary {
   font-weight: bold;
 }
+.main-container {
+  padding-top: 150px;
+  background-color: #f5f6fe;
+  padding-bottom: 70px;
+}
