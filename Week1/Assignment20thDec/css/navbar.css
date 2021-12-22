@@ -6,3 +6,8 @@
 .footer-text {
   text-align: center;
 }
+
+.active {
+  color: #5d6778;
+  font-weight: bold;
+}

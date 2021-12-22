@@ -17,3 +17,16 @@ p {
 .btn-primary {
   font-weight: bold;
 }
+.cards {
+  background-color: white;
+}
+.cards-h5 {
+  font-weight: bold;
+  padding-top: 25px;
+}
+.col-h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 32px;
+  font-weight: 700;
+}
