@@ -9,7 +9,11 @@ h5,
 p,
 body {
   font-family: 'Poppins', sans-serif;
+  color: #252930;
 }
 p {
   color: #5d6778;
+}
+.btn-primary {
+  font-weight: bold;
 }
