@@ -11,3 +11,20 @@ body {
 a {
   text-size-adjust: 12px;
 }
+
+#title-h1 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 77px;
+  padding-bottom: 10px;
+}
+.title-para {
+  font-weight: 400;
+  color: #868e96;
+  font-size: 21px;
+  line-height: 40px;
+}
+.title-btn {
+  background-color: #551a8f;
+  color: white;
+}
