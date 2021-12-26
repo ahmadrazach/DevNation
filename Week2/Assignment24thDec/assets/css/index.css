@@ -1,0 +1,8 @@
+nav {
+  display: flex;
+}
+.logo-heading {
+  font-weight: 300;
+  font-size: 40px;
+  color: black;
+}
