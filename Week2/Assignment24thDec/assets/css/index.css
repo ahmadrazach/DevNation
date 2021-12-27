@@ -149,3 +149,37 @@ nav ul li a:hover {
   width: 90%;
   margin: auto auto 50px auto;
 }
+.skill-heading span {
+  color: var(--main-bg-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.skill-heading h2 {
+  color: var(--dark-gray-color);
+  font-size: 45px;
+  margin: 0px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.skills-box {
+  display: flex;
+  margin: 25px 0px;
+}
+
+.s-box-icon {
+  margin-right: 15px;
+}
+.s-box-icon i {
+  font-size: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--very-light-gray-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-bg-color);
+}
