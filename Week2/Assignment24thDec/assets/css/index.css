@@ -183,3 +183,9 @@ nav ul li a:hover {
   align-items: center;
   color: var(--main-bg-color);
 }
+
+.s-box-text strong {
+  color: var(--dark-gray-color);
+  margin: 0px;
+  font-size: 16px;
+}
