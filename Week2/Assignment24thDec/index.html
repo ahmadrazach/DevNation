@@ -5,66 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/index.css">
+    <!--Style Tag-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ahmed Raza</title>
 </head>
 <body>
-    <section id="main">
-    <nav>
-        <a href="index.html" >
-            <h1 class="logo-heading">iam<span class="name">Ahmed</span></h1>
-        </a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skilss</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="button-p mt-0">
-        <a href="#" class="portfolio-button">Get In Touch</a>
-        </div>
-    </nav>
+     <!-- Navbar Section -->
+     <section id="main">
+        <!-- Add navbar code -->
+        <nav>
+            <!-- Logo -->
+            <a href="#">
+                <h1 class="logo-heading">iam<span class="name">Ahmed</span></h1>
+            </a>
+            <!-- Menu Items -->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#my-projects">Recent</a></li>
+                <li><a href="#client">Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Get in touch button (more of a link) -->
+            <a href="#" class="get-in-touch">Get in touch</a>
+        </nav>
     </section>
+
+    <!-- Landing Page - Main Section (Value Prop Section) -->
     <div class="content">
+        <!-- Div on the left -->
         <div class="model">
-            <img alt="ahmed-raza" src="https://media.istockphoto.com/photos/handsome-afro-student-posing-on-bookshelves-background-picture-id1171062918?k=20&m=1171062918&s=612x612&w=0&h=I6djuMs92BCgJaBv5iIsPALt2oZ8mYQU7ttF1hmhPkE=">
+            <img class="img" alt="raheel ahmad" src="assets/imgs/Programming-bro.png">
         </div>
+
+        <!-- Div on the right -->
         <div class="main-text">
-            <h1 class="logo-heading">iam<span class="name">Ahmed</span></h1>
-            <p>I'm Ahmed and I am a full-stck developer</p>
-            <p>I love building thorugh code</p>
-            <div class="button-p">
-            <a href="#" class="portfolio-button">Get in touch</a>
+            <h1 class="logo-heading">iam<span class="name">Ahmed</span>
+            </h1>
+            <p>I'm Ahmed and I love building web applications</p>
+            <p>I like to write optimized code</p>
+            <a href="#" class="portfolio-button">Get in Touch</a>
+            <!-- Social Icons -->
+        </div>
+    </div>
+<section id="skills">
+    <!--skills text-->
+    <div class="skill-text">
+        <div class="skill-heading">
+            <span>My Skills</span>
+            <h2>My Expertise</h2>
+        </div>
+        <div class="s-box-container">
+            <!-- skill box 1 -->
+            <div class="skills-box">
+                <div class="s-box-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="s-box-text">
+                    <strong>HTML</strong>
+                    <p>I am an expert in HTML expertise</p>
+                </div>
+            </div>
+            <!-- skill box 2 -->
+            <div class="skills-box">
+                <div class="s-box-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="s-box-text">
+                    <strong>CSS</strong>
+                    <p>I am an expert in page styling</p>
+                </div>
+            </div>
+            <!-- skill box 3 -->
+            <div class="skills-box">
+                <div class="s-box-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="s-box-text">
+                    <strong>Python</strong>
+                    <p>I am an expert in solving problems</p>
+                </div>
             </div>
         </div>
     </div>
-<!-- Skills-->
-    <div class="row" style="display: flex;align-items: center;
-    justify-content: space-between;  margin-top: 10%;
-  margin-left: 5%;
-  margin-right: 5%;">
-        <div class="column">
-            <h1>My Expertise</h1>
-            <div class="row">
-                <i class="fab fa-html5"></i>
-             <h2>HTML</h2>
-             <p>We will write the desciption of the skill</p>
-            </div>
-            <div class="row">
-                
-                <h2>CSS</h2>
-                <p>We will write the desciption of the skill</p>
-               </div>
-               <div class="row">
-                <h2>Javascipt</h2>
-                <p>We will write the desciption of the skill</p>
-               </div>
-        </div>
-        <div class="column" > <img src="https://saadpasta.github.io/static/media/manOnTable.52be3144.svg" width="500px" height="auto" class="img-fluid"/></div>
-      </div>
-<!-- Projects-->
-<div class="row" style="text-align: center;">
-    <h1>My Projects</h1>
-  </div>
+    <!-- skill image -->
+    <div class="skill-img">
+        <img class="img" alt="skills-img" src="assets/imgs/Programming-amico.png">
+    </div>
+    
+</section>
 </body>
 </html>
