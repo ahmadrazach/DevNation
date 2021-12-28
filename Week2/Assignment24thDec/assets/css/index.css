@@ -200,7 +200,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   margin: auto auto 50px auto;
 }
 .project-showcase {
@@ -269,4 +269,7 @@ nav ul li a:hover {
 .project-btn:hover {
   background-color: var(--white-main-color);
   color: var(--black-color);
+}
+.ml-5 {
+  margin-left: 3.5%;
 }
