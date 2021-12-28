@@ -284,3 +284,77 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
 }
+
+#client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: auto auto 50px auto;
+  padding: 50px 0px;
+}
+.c-box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+
+.client-box {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: var(--main-bg-color);
+  color: var(--white-main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+}
+
+.client-box img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid var(--white-main-color);
+  background-color: white;
+  object-fit: cover;
+}
+
+.star {
+  display: flex;
+  margin: 10px 0px 0px 0px;
+}
+
+.star i {
+  color: gold;
+}
+
+.client-box p {
+  color: var(--white-main-color);
+  font-size: 14px;
+  margin: 10px 0px;
+  text-align: center;
+}
+.client-box a {
+  width: 190px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-bg-color);
+  background-color: var(--white-main-color);
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid white;
+}
+
+.client-box a:hover {
+  color: white;
+  background-color: rgba(222, 220, 232, 0.2);
+  border: 1px solid white;
+}
