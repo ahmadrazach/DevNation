@@ -358,3 +358,50 @@ nav ul li a:hover {
   background-color: rgba(222, 220, 232, 0.2);
   border: 1px solid white;
 }
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto auto 50px auto;
+}
+
+#contact img {
+  width: 500px;
+}
+
+#contact h3 {
+  font-size: 32px;
+  margin: 20px;
+}
+.contact-input {
+  width: 400px;
+  height: 50px;
+  background-color: var(--white-main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.contact-input input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: var(--dark-gray-color);
+}
+.contact-input a {
+  width: 200px;
+  height: 40px;
+  background-color: var(--main-bg-color);
+  color: var(--white-main-color);
+  font-size: 14px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px;
+}
