@@ -273,3 +273,14 @@ nav ul li a:hover {
 .ml-5 {
   margin-left: 3.5%;
 }
+
+.view-more-btn {
+  background-color: var(--main-bg-color);
+  color: var(--white-main-color);
+  height: 44px;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
