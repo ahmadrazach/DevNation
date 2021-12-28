@@ -405,3 +405,15 @@ nav ul li a:hover {
   align-items: center;
   margin: auto 10px;
 }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--very-light-gray-color);
+}
+
+footer p {
+  margin: 15px 0px;
+  color: var(--dark-gray-color);
+  font-size: 14px;
+}
