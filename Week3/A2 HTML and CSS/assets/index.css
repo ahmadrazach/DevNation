@@ -125,3 +125,21 @@ a:hover {
 .img-div {
   padding-bottom: 50px;
 }
+
+.companies {
+  color: var(--dark-gray-color);
+  margin: 30px 150px;
+
+  border-bottom: 1px solid var(--white-main-color);
+}
+.companies-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 20px;
+}
+.companies-content h2 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
