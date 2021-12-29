@@ -13,6 +13,7 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  color: var(--white-main-color);
 }
 .uppest-div {
   background-image: linear-gradient(var(--main-bg-color), #181929);
@@ -59,4 +60,26 @@ nav ul li a {
 }
 a:hover {
   color: var(--white-main-color);
+}
+
+.first-div {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 140px;
+  padding-bottom: 140px;
+  column-gap: 10%;
+}
+
+.text-div h1 {
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: 800;
+}
+.title-text span {
+  background-image: url(https://w7.pngwing.com/pngs/184/671/png-transparent-circle-border-blue-circle-gradient-circle-dense-circle.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
