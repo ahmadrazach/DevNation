@@ -22,6 +22,9 @@ nav {
   padding-left: 5%;
   padding-right: 5%;
 }
+nav a h1 {
+  font-size: 25px;
+}
 ul {
   list-style: none;
 }
@@ -66,9 +69,10 @@ a:hover {
 .first-div {
   display: flex;
   justify-content: space-around;
-  margin-left: 10%;
+  padding-left: 11.5%;
+  padding-right: 11.5%;
   width: 80%;
-  margin-top: 140px;
+  margin-top: 80px;
   padding-bottom: 100px;
   column-gap: 15%;
 }
@@ -113,4 +117,11 @@ a:hover {
 .main-btn:hover {
   background-color: goldenrod;
   color: var(--dark-gray-color);
+}
+.img-div img {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.img-div {
+  padding-bottom: 50px;
 }
