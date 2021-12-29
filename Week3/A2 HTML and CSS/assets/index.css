@@ -144,7 +144,7 @@ a:hover {
 .how-it-works {
   border-top: 1px solid #e0e0e0;
   color: var(--main-bg-color);
-  background-color: #f8f8f8;
+  background-color: hsl(0, 0%, 97%);
   align-items: center;
 }
 
@@ -155,6 +155,7 @@ a:hover {
   align-items: center;
   margin: 120px 150px;
   padding-bottom: 120px;
+  margin-bottom: 0px;
 }
 .how-it-works h2 {
   color: #191b35;
@@ -208,11 +209,14 @@ a:hover {
   color: white;
 }
 #Features {
-  background-color: #f8f8f8;
+  background-color: hsl(0, 0%, 97%);
   color: black;
   position: relative;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
 }
 .block-content {
+  background-image: linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0));
   margin: 120px 0px;
   display: flex;
   flex-direction: column;
@@ -237,10 +241,14 @@ a:hover {
 }
 .features-grid {
   display: grid;
+
+  align-items: center;
   margin-top: 80px;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 100px;
+  margin-left: 150px;
 }
 .feature-block {
   display: grid;
@@ -253,4 +261,34 @@ a:hover {
   background-color: #fff;
   transition: box-shadow 0.3s ease-in-out;
   cursor: crosshair;
+}
+.feature-block:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.icon-bg-circle {
+  height: 48px;
+  border-radius: 100%;
+  background-color: rgba(182, 185, 190, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-name-text {
+  margin-top: 7px;
+}
+.feature-name-text h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.feature-name-text p {
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 22px;
 }
