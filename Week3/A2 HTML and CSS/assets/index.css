@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+:root {
+  --main-bg-color: #1f2033;
+  --main-btn-color: #fdd241;
+  --main-btn-hover-color: #c49f24;
+  --white-main-color: #fff;
+  --dark-gray-color: #1e272e;
+  --light-gray-color: #747474;
+  --very-light-gray-color: #f0f0f0;
+}
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.uppest-div {
+  background-image: linear-gradient(var(--main-bg-color), #181929);
 }
 nav {
   display: flex;
@@ -9,4 +24,39 @@ nav {
 }
 ul {
   list-style: none;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white-main-color);
+  transition: all 0.3s ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3px;
+  padding: 0px 22px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--light-gray-color);
+}
+
+.call-to-cat-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: underline;
+  color: var(--very-light-gray-color);
+}
+a:hover {
+  color: var(--white-main-color);
 }
