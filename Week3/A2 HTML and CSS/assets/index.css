@@ -8,6 +8,9 @@
   --light-gray-color: #747474;
   --very-light-gray-color: #f0f0f0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
@@ -141,7 +144,7 @@ a:hover {
   line-height: 22px;
   font-weight: 600;
 }
-.how-it-works {
+#how-it-works {
   border-top: 1px solid #e0e0e0;
   color: var(--main-bg-color);
   background-color: hsl(0, 0%, 97%);
@@ -157,14 +160,14 @@ a:hover {
   padding-bottom: 120px;
   margin-bottom: 0px;
 }
-.how-it-works h2 {
+#how-it-works h2 {
   color: #191b35;
   font-size: 48px;
   line-height: 60px;
   font-weight: 600;
 }
 
-.how-it-works h2 span {
+#how-it-works h2 span {
   background-image: url(https://assets.website-files.com/6115ba6494f278764d0490f1/61165ea66534b33a0d0cffa6_Text%20Span%20Shape.svg);
   background-position: 50% 100%;
   background-size: contain;
@@ -209,20 +212,19 @@ a:hover {
   color: white;
 }
 #Features {
-  background-color: hsl(0, 0%, 97%);
   color: black;
   position: relative;
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
 }
 .block-content {
-  background-image: linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0));
-  margin: 120px 0px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  background-image: linear-gradient(#ffffff, #f9f9f9);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px 40px;
+  padding: 100px 0px;
   z-index: 1;
-  width: 95%;
 }
 .section-title {
   margin-top: 0;
