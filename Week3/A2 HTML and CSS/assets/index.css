@@ -312,4 +312,51 @@ a:hover {
   color: black;
 }
 #feature-show-div2 {
+  border-bottom: 1px solid #e0e0e0;
+}
+.testimonial-grid {
+  display: grid;
+  margin-top: 80px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+.testimonial-block {
+  padding: 24px;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  background-color: #fff;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: crosshair;
+}
+.name-position h4 {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+}
+.name-position p {
+  margin: 0;
+  padding: 0;
+}
+.testimonial-block p {
+  margin-bottom: 0;
+  color: #3d455a;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: left;
+}
+.testimonial-image img:nth-child(2) {
+  position: absolute;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
