@@ -10,6 +10,8 @@
 }
 html {
   scroll-behavior: smooth;
+  padding: 0px;
+  margin: 0px;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -391,4 +393,7 @@ a:hover {
   font-size: 24px;
   line-height: 40px;
   font-weight: 500;
+}
+.footer {
+  background-color: var(--main-bg-color);
 }
