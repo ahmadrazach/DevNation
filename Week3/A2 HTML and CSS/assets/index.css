@@ -211,7 +211,8 @@ a:hover {
   background-color: var(--main-bg-color);
   color: white;
 }
-#Features {
+#Features,
+#FAQs {
   color: black;
   position: relative;
 
@@ -311,7 +312,8 @@ a:hover {
   margin-bottom: 40px;
   color: black;
 }
-#feature-show-div3 {
+#feature-show-div3,
+.block-faqs {
   border-bottom: 1px solid #e0e0e0;
 }
 .testimonial-grid {
