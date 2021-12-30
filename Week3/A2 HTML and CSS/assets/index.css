@@ -214,6 +214,8 @@ a:hover {
 #Features {
   color: black;
   position: relative;
+
+  border-bottom: 1px solid #e0e0e0;
 }
 .block-content {
   border-top-left-radius: 60px;
@@ -234,7 +236,8 @@ a:hover {
   line-height: 60px;
   font-weight: 600;
 }
-.section-title span {
+.section-title span,
+.features-show h1 span {
   background-image: url(https://assets.website-files.com/6115ba6494f278764d0490f1/61165ea66534b33a0d0cffa6_Text%20Span%20Shape.svg);
   background-position: 50% 100%;
   background-size: contain;
@@ -293,4 +296,18 @@ a:hover {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 22px;
+}
+.features-show {
+  margin-top: 100px;
+}
+.features-show h1 {
+  color: #191b35;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 600;
+}
+.features-show p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: black;
 }
