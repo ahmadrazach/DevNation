@@ -450,18 +450,28 @@ a:hover {
 .square {
   height: 120px;
   background-image: url(https://assets.website-files.com/6115ba6494f278764d0490f1/61165ea4a28d58661b5e50af_Cart.png);
+  animation: coin 3s infinite;
 }
 .coin {
   height: 150px;
   background-image: url(https://assets.website-files.com/6115ba6494f278764d0490f1/61165ea4ec7a6539d131ffbf_Doge%20Coin.png);
+  animation: shimmy 3s infinite;
 }
 .square,
 .coin {
   background-repeat: no-repeat;
   color: white;
-  animation: shimmy 3s infinite;
   animation-direction: alternate;
 }
+@keyframes coin {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, 50px);
+  }
+}
+
 @keyframes shimmy {
   0% {
     transform: translate(1300px, 100px);
