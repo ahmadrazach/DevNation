@@ -458,19 +458,15 @@ a:hover {
 .square,
 .coin {
   background-repeat: no-repeat;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
   color: white;
   animation: shimmy 3s infinite;
   animation-direction: alternate;
 }
 @keyframes shimmy {
   0% {
-    transform: translate(0, 0);
+    transform: translate(1300px, 100px);
   }
   100% {
-    transform: translate(20px, 50px);
+    transform: translate(1300px, 120px);
   }
 }
