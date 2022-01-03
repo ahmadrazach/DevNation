@@ -84,5 +84,15 @@ section {
 
   .split > * {
     flex-basis: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+}
+
+.container--narrow {
+  max-width: 34rem;
+}
+
+.bg-light {
+  background-color: var(--primary-200);
 }
