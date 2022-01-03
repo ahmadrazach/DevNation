@@ -53,3 +53,21 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.text-center {
+  text-align: center;
+}
+
+section {
+  padding: 4rem 0;
+}
+@media (min-width: 40em) {
+  section {
+    padding: 7rem 0rem;
+  }
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
