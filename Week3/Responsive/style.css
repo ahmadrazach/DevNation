@@ -1,8 +1,9 @@
 :root {
   --primary-200: #f3eed9;
-  --primary-400: red;
-  --neutral: #fff;
+  --primary-400: #fff;
+  --neutral-100: #fff;
   ---neutral-200: #222c2a;
+
   /*Fronts Def*/
 }
 
@@ -95,4 +96,13 @@ section {
 
 .bg-light {
   background-color: var(--primary-200);
+}
+
+.bg-primary {
+  background-color: #824936;
+  color: var(---neutral-100);
+}
+
+.bg-dark {
+  color: var(---neutral-100);
 }
