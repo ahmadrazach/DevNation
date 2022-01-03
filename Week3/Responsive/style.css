@@ -71,6 +71,7 @@ section {
 .split {
   display: flex;
   flex-direction: column;
+  text-align: start;
 }
 
 .container--narrow {
@@ -98,21 +99,22 @@ section {
   color: #fff;
 }
 
+.center {
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px 0;
+}
 /*Media Queries*/
 @media (min-width: 40em) {
   .split {
     flex-direction: row;
   }
-
+  section {
+    padding: 7rem 0rem;
+  }
   .split > * {
     flex-basis: 100%;
     margin-left: 20px;
     margin-right: 20px;
-  }
-}
-
-@media (min-width: 40em) {
-  section {
-    padding: 7rem 0rem;
   }
 }
