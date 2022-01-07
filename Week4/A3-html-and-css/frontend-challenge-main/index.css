@@ -24,7 +24,7 @@ body {
   font-family: 'Public Sans';
   font-size: 18px;
 }
-.grid-container {
+.navbar-grid {
   display: grid;
   margin: 0px 30vh;
   height: 10vh;
@@ -33,15 +33,41 @@ body {
 nav {
   display: grid;
   grid-template-columns: max-content auto max-content;
-  background-color: aqua;
+  align-items: center;
 }
 .menu-item {
   display: grid;
-  background-color: black;
-  grid-template-columns: auto auto auto auto auto;
-  justify-content: center;
-}
 
+  grid-template-columns: 0fr 0fr 0fr 0fr 0fr;
+  padding: 0px 120px;
+  justify-content: space-evenly;
+}
+a {
+  letter-spacing: -01px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: var(--neutral-grayish-blue);
+}
+.menu-item li a:hover {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--primary-lime-green);
+  color: var(--primary-dark-blue);
+}
 .call-to-act-btn {
-  background-color: var(--primary-lime-green);
+  border-radius: 50px;
+  padding: 15px 30px;
+  color: var(--neutral-white);
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+}
+.call-to-act-btn:hover {
+  background-image: linear-gradient(
+    to right,
+    hsla(136, 65%, 51%, 0.61),
+    hsla(192, 70%, 51%, 0.699)
+  );
 }
