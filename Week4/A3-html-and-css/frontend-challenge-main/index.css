@@ -2,3 +2,9 @@
   margin: 0;
   padding: 0;
 }
+nav {
+  display: grid;
+  grid-area: header;
+  grid-template-columns: max-content auto max-content;
+  background-color: aqua;
+}
