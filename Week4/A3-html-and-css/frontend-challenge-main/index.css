@@ -71,3 +71,27 @@ a {
     hsla(192, 70%, 51%, 0.699)
   );
 }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 90vh;
+  background-color: antiquewhite;
+}
+.hero-grid-right {
+  margin: 25vh 21vh;
+}
+.hero-grid-right h1 {
+  font-size: 08vh;
+  font-weight: 400;
+}
+.hero-btn,
+.hero-grid-right p {
+  margin-top: 40px;
+}
+.hero-grid-left {
+  background-image: url(./images/bg-intro-desktop.svg);
+  background-position: left;
+  background-size: 200vh;
+  background-repeat: no-repeat;
+}
