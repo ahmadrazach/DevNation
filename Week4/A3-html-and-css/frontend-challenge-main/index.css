@@ -165,3 +165,34 @@ a {
   line-height: 3.5vh;
   color: var(--neutral-grayish-blue);
 }
+.footer {
+  padding: 7vh 20vh;
+  background-color: var(--primary-dark-blue);
+  color: var(--neutral-light-grayish-blue);
+  display: grid;
+  grid-template-columns: 40vh 40vh 40vh 40vh;
+}
+.social-logos {
+  margin-top: 7vh;
+  margin-right: 20vh;
+  display: grid;
+  grid-template-columns: 5vh 5vh 5vh 5vh 5vh;
+}
+.social-logos img {
+  justify-content: space-between;
+}
+.homepage-links-column,
+.outer-pages-column {
+  display: grid;
+  line-height: 3.5vh;
+}
+.call-to-act-column {
+  margin-top: 2vh;
+}
+.call-to-act-column a {
+  margin-left: 15vh;
+}
+.call-to-act-column p {
+  margin-top: 5vh;
+  color: var(--neutral-grayish-blue);
+}
