@@ -76,20 +76,23 @@ a {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 90vh;
-  background-color: antiquewhite;
-}
-.hero-grid-right {
-  margin: 25vh 21vh;
-}
-.hero-grid-right h1 {
-  font-size: 08vh;
-  font-weight: 400;
-}
-.hero-btn,
-.hero-grid-right p {
-  margin-top: 40px;
 }
 .hero-grid-left {
+  margin: 25vh 21vh;
+}
+.hero-grid-left h1 {
+  font-size: 08vh;
+  font-weight: 300;
+}
+.hero-grid-left p {
+  margin-top: 40px;
+  color: var(--neutral-grayish-blue);
+}
+.hero-btn {
+  margin-top: 40px;
+}
+
+.hero-grid-right {
   background-image: url(./images/bg-intro-desktop.svg);
   background-position: left;
   background-size: 200vh;
