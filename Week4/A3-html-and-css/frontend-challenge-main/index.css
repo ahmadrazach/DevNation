@@ -107,15 +107,18 @@ a {
   background-color: var(--neutral-light-grayish-blue);
   padding: 15vh 20vh;
 }
-.about-us-grid-row-title h2 {
+.about-us-grid-row-title h2,
+.blog-title-row h2 {
   font-weight: 400;
   font-size: 5vh;
 }
 
-.about-us-grid-row-cards {
+.about-us-grid-row-cards,
+.blog-cards-row {
   display: grid;
-  grid-auto-flow: column;
-  column-gap: 3vh;
+  grid-template-columns: 40vh 40vh 40vh 40vh;
+  grid-row: 1;
+  column-gap: 2.5vh;
   margin-top: 10vh;
 }
 
@@ -128,4 +131,37 @@ a {
   color: var(--neutral-grayish-blue);
   margin-top: 5vh;
   line-height: 3.5vh;
+}
+.blog-grid {
+  padding: 15vh 20vh;
+  background-color: var(--neutral-verylight-gray);
+}
+.blog-card {
+  background-color: var(--neutral-white);
+}
+.blog-card img {
+  height: 35vh;
+  width: 40vh;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.blog-description {
+  margin: 2vh;
+}
+.author-name {
+  margin-top: 2vh;
+  font-size: 1.7vh;
+  color: var(--neutral-grayish-blue);
+}
+.blog-description h3 {
+  margin-top: 2vh;
+  font-weight: 400;
+  font-size: 3vh;
+}
+.blog-description p {
+  margin-top: 2vh;
+  font-size: 2vh;
+  line-height: 3.5vh;
+  color: var(--neutral-grayish-blue);
 }
