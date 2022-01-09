@@ -43,7 +43,7 @@ nav {
   justify-content: space-evenly;
 }
 a {
-  letter-spacing: -01px;
+  letter-spacing: -0.5px;
   font-weight: 500;
   padding-bottom: 10px;
   color: var(--neutral-grayish-blue);
@@ -84,12 +84,14 @@ a {
   font-size: 08vh;
   font-weight: 300;
 }
-.hero-grid-left p {
+.hero-grid-left p,
+.about-us-grid-row-title p {
   margin-top: 40px;
+  line-height: 3.5vh;
   color: var(--neutral-grayish-blue);
 }
 .hero-btn {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .hero-grid-right {
@@ -97,4 +99,30 @@ a {
   background-position: left;
   background-size: 200vh;
   background-repeat: no-repeat;
+}
+.about-us-grid {
+  background-color: var(--neutral-light-grayish-blue);
+  padding: 15vh 20vh;
+}
+.about-us-grid-row-title h2 {
+  font-weight: 400;
+  font-size: 5vh;
+}
+
+.about-us-grid-row-cards {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 3vh;
+  margin-top: 10vh;
+}
+
+.about-us-card h3 {
+  margin-top: 5vh;
+  font-weight: 400;
+  font-size: 4vh;
+}
+.about-us-card p {
+  color: var(--neutral-grayish-blue);
+  margin-top: 5vh;
+  line-height: 3.5vh;
 }
