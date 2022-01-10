@@ -79,12 +79,13 @@ a {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 90vh;
+  width: 100%;
 }
 .hero-grid-left {
   margin: 25vh 21vh;
 }
 .hero-grid-left h1 {
-  font-size: 08vh;
+  font-size: 8vh;
   font-weight: 300;
 }
 .hero-grid-left p,
@@ -100,8 +101,12 @@ a {
 .hero-grid-right {
   background-image: url(./images/bg-intro-desktop.svg);
   background-position: left;
-  background-size: 200vh;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+.hero-grid-right img {
+  width: 80%;
+  height: auto;
 }
 @media only screen and (max-width: 768px) {
   .navbar-grid {
@@ -110,13 +115,27 @@ a {
   }
   .hero-grid {
     grid-template-columns: 100%;
-    height: 230vh;
-  }
-  .hero-grid-right {
-    order: 1;
+    height: 100vh;
   }
   .hero-grid-left {
     order: 2;
+    margin: 20px 20px;
+    text-align: center;
+  }
+  .hero-grid-left h1 {
+    font-size: 2vw;
+  }
+  .hero-grid-left p {
+  }
+  .hero-grid-right {
+    order: 1;
+    height: 55vh;
+    background-size: 95vh;
+    background-position-x: -22vw;
+    background-position-y: -35vh;
+  }
+  .hero-grid-right img {
+    object-position: 1vh -28.5vw;
   }
 }
 .about-us-grid {
@@ -181,11 +200,7 @@ a {
   color: #2ec29c;
   cursor: pointer;
 }
-svg:hover,
-svg:focus {
-  fill: #2ec29c;
-  cursor: pointer;
-}
+
 .blog-description p {
   margin-top: 2vh;
   font-size: 2vh;
@@ -204,6 +219,14 @@ svg:focus {
   margin-right: 20vh;
   display: grid;
   grid-template-columns: 5vh 5vh 5vh 5vh 5vh;
+}
+.social-logos svg {
+  fill: var(--neutral-grayish-blue);
+}
+svg:hover,
+svg:focus {
+  fill: #2ec29c;
+  cursor: pointer;
 }
 .homepage-links-column,
 .outer-pages-column {
