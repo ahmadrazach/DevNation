@@ -120,19 +120,23 @@ a {
   }
   .hero-grid-left {
     order: 2;
-    margin: 2vh 5vw;
+    margin: 0vh 8vw;
     text-align: center;
   }
   .hero-grid-left h1 {
-    font-size: 5vw;
+    font-size: 8vw;
   }
   .hero-grid-left p {
+    font-weight: 150;
+    font-size: 2.3vh;
+    line-height: 3.3vh;
+    margin-top: 3vh;
   }
   .hero-grid-right {
     order: 1;
-    height: 55vh;
-    background-size: 95vh;
-    background-position-x: -22vw;
+    height: 34vh;
+    background-size: 91vh;
+    background-position-x: -20vw;
     background-position-y: -35vh;
   }
   .hero-grid-right img {
