@@ -105,9 +105,18 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .navbar-grid {
-    display: grid;
     margin: 0px 10vh;
     height: 10vh;
+  }
+  .hero-grid {
+    grid-template-columns: 100%;
+    height: 230vh;
+  }
+  .hero-grid-right {
+    order: 1;
+  }
+  .hero-grid-left {
+    order: 2;
   }
 }
 .about-us-grid {
