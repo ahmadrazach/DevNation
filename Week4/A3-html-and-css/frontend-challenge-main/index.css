@@ -159,6 +159,17 @@ a {
   font-weight: 400;
   font-size: 3vh;
 }
+.blog-description h3:hover,
+.outer-pages-column a:hover,
+.homepage-links-column a:hover {
+  color: #2ec29c;
+  cursor: pointer;
+}
+svg:hover,
+svg:focus {
+  fill: #2ec29c;
+  cursor: pointer;
+}
 .blog-description p {
   margin-top: 2vh;
   font-size: 2vh;
@@ -178,9 +189,6 @@ a {
   display: grid;
   grid-template-columns: 5vh 5vh 5vh 5vh 5vh;
 }
-.social-logos img {
-  justify-content: space-between;
-}
 .homepage-links-column,
 .outer-pages-column {
   display: grid;
@@ -188,11 +196,13 @@ a {
 }
 .call-to-act-column {
   margin-top: 2vh;
+  margin-left: 5vh;
 }
 .call-to-act-column a {
-  margin-left: 15vh;
+  margin-left: 10vh;
 }
 .call-to-act-column p {
   margin-top: 5vh;
+  font-size: 2.2vh;
   color: var(--neutral-grayish-blue);
 }
