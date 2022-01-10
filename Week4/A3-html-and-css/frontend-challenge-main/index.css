@@ -189,7 +189,6 @@ a {
   }
   .about-us-grid-row-cards {
     grid-template-columns: 1fr;
-    column-gap: 7vh;
     row-gap: 5vh;
   }
 }
@@ -202,9 +201,8 @@ a {
 }
 .blog-card img {
   height: 35vh;
-  width: 40vh;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  width: 100%;
+  border-radius: 7px;
 }
 
 .blog-description {
@@ -232,6 +230,16 @@ a {
   font-size: 2vh;
   line-height: 3.5vh;
   color: var(--neutral-grayish-blue);
+}
+@media only screen and (max-width: 768px) {
+  .blog-grid {
+    padding: 10vh 5vh;
+    text-align: center;
+  }
+  .blog-cards-row {
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+  }
 }
 .footer {
   padding: 7vh 20vh;
