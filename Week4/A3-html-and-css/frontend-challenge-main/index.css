@@ -105,8 +105,9 @@ a {
   background-repeat: no-repeat;
 }
 .hero-grid-right img {
-  width: 80%;
   height: auto;
+  object-position: 2vh -6vw;
+  margin-left: 7vw;
 }
 @media only screen and (max-width: 768px) {
   .navbar-grid {
@@ -119,11 +120,11 @@ a {
   }
   .hero-grid-left {
     order: 2;
-    margin: 20px 20px;
+    margin: 2vh 5vw;
     text-align: center;
   }
   .hero-grid-left h1 {
-    font-size: 2vw;
+    font-size: 5vw;
   }
   .hero-grid-left p {
   }
@@ -135,7 +136,8 @@ a {
     background-position-y: -35vh;
   }
   .hero-grid-right img {
-    object-position: 1vh -28.5vw;
+    object-position: 1vh -34.5vw;
+    width: 95%;
   }
 }
 .about-us-grid {
