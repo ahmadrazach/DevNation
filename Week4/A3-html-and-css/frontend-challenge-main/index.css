@@ -279,3 +279,41 @@ svg:focus {
   font-size: 2.2vh;
   color: var(--neutral-grayish-blue);
 }
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 7vh 10vh;
+    grid-template-columns: 1fr;
+    color: var(--neutral-white);
+    margin: 0;
+  }
+  .brand-links-column,
+  .outer-pages-column {
+    margin-bottom: 5vh;
+  }
+  .social-logos {
+    margin-top: 5vh;
+    margin-right: 0px;
+  }
+  .social-logos svg {
+    fill: var(--neutral-white);
+  }
+
+  .homepage-links-column a,
+  .outer-pages-column a {
+    color: var(--neutral-white);
+  }
+  .brand-links-column,
+  .homepage-links-column,
+  .outer-pages-column,
+  .call-to-act-column {
+    justify-self: center;
+    text-align: center;
+  }
+  .call-to-act-column,
+  .call-to-act-column a {
+    margin-left: 0vh;
+  }
+  .call-to-act-column p {
+    margin-top: 7vh;
+  }
+}
