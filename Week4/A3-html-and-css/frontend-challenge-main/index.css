@@ -308,6 +308,7 @@ svg:focus {
   .call-to-act-column {
     justify-self: center;
     text-align: center;
+    font-size: 2.5vh;
   }
   .call-to-act-column,
   .call-to-act-column a {
