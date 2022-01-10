@@ -103,6 +103,13 @@ a {
   background-size: 200vh;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 768px) {
+  .navbar-grid {
+    display: grid;
+    margin: 0px 10vh;
+    height: 10vh;
+  }
+}
 .about-us-grid {
   background-color: var(--neutral-light-grayish-blue);
   padding: 15vh 20vh;
