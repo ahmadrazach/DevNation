@@ -24,3 +24,23 @@ ul {
   border: none;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
+.hero-column-left h1 {
+  font-weight: 500;
+}
+.hero-column-left p {
+  color: var(--neutral-grayish-blue);
+  font-size: 20px;
+  font-weight: 200;
+}
+.btn {
+  border-radius: 7px;
+  border: none;
+}
+.btn-primary {
+  background-color: var(--primary-soft-blue);
+}
+.btn-secondary {
+  background-color: rgba(238, 238, 238, 0.767);
+  color: var(--neutral-very-dark-blue);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
