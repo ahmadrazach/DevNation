@@ -15,7 +15,12 @@ html {
 ul {
   list-style: none;
 }
-ul li a {
+.nav-item a {
   text-transform: uppercase;
-  color: black;
+  color: var(--neutral-very-dark-blue);
+}
+.nav-item button {
+  background-color: var(--primary-soft-red);
+  border: none;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
