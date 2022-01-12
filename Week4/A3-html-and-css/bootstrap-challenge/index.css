@@ -86,3 +86,6 @@ ul {
 .card-body {
   color: var(--neutral-very-dark-blue);
 }
+.card {
+  border-radius: 13px;
+}
