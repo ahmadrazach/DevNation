@@ -24,13 +24,18 @@ ul {
   border: none;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
-.hero-column-left h1 {
+.hero-column-left h1,
+.features-div h2 {
   font-weight: 500;
 }
-.hero-column-left p {
+.hero-column-left p,
+.features-content-div p {
   color: var(--neutral-grayish-blue);
   font-size: 20px;
   font-weight: 200;
+}
+.features-div-description {
+  margin: 0 300px;
 }
 .btn {
   border-radius: 7px;
@@ -43,4 +48,14 @@ ul {
   background-color: rgba(238, 238, 238, 0.767);
   color: var(--neutral-very-dark-blue);
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+/* Features Div Styling */
+@media (min-width: 992px) {
+  .features-content-div {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+}
+.img {
+  width: 10%;
 }
