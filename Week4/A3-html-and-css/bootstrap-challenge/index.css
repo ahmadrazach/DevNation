@@ -25,17 +25,20 @@ ul {
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 .hero-column-left h1,
-.features-div h2 {
+.features-div h2,
+.download-extension-div h2 {
   font-weight: 500;
 }
 .hero-column-left p,
-.features-content-div p {
+.features-content-div p,
+.download-extension-div p,
+.card-description p {
   color: var(--neutral-grayish-blue);
   font-size: 20px;
   font-weight: 200;
 }
-.features-div-description {
-  margin: 0 300px;
+.card-description p {
+  font-size: smaller;
 }
 .btn {
   border-radius: 7px;
@@ -55,6 +58,16 @@ ul {
     flex: 0 0 auto;
     width: 80%;
   }
+  .download-extension-div {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .features-div-description {
+    margin: 0 300px;
+  }
+  .download-extension-div-description {
+    margin: 0 430px;
+  }
 }
 .img {
   width: 10%;
@@ -68,4 +81,8 @@ ul {
     display: flex;
     align-items: flex-start;
   }
+}
+/*Download Extension styling */
+.card-body {
+  color: var(--neutral-very-dark-blue);
 }
