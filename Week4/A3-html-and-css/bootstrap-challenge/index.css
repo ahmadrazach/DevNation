@@ -59,3 +59,13 @@ ul {
 .img {
   width: 10%;
 }
+@media (min-width: 992px) {
+  .tab-content-right {
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+  .tab-content-right p {
+    display: flex;
+    align-items: flex-start;
+  }
+}
