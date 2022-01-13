@@ -27,6 +27,9 @@ body {
   font-family: 'Public Sans';
   font-size: 18px;
 }
+.navbar svg {
+  display: block;
+}
 .navbar-grid {
   margin: 1% 15%;
   align-items: center;
@@ -80,6 +83,9 @@ a {
 .icon {
   display: none;
 }
+.menu {
+  display: none;
+}
 @media screen and (max-width: 600px) {
   .navbar-grid {
     margin: 5% 10%;
@@ -94,6 +100,28 @@ a {
   .icon {
     display: block;
     cursor: pointer;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    row-gap: 50px;
+    background-color: var(--neutral-light-grayish-blue);
+    height: 40vh;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  .menu a {
+    color: var(--primary-dark-blue);
+    font-weight: 500;
+  }
+  .menu ul {
+    display: grid;
+    padding: 8vh;
+    justify-content: center;
+    gap: 2vh;
+    text-align: center;
   }
 }
 .hero-grid {
