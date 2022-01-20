@@ -11,5 +11,5 @@ else:
     input2 = bool(False)
 
 if(input1 != input2):
-    xor_result = True
+    xor_result = True  # comparing and saving result
 print("XOR Result : ", xor_result)
