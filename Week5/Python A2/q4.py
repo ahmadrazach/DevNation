@@ -10,6 +10,7 @@ def is_prime(number):
         if(number % i) == 0:
             flag = False
             break
+
     return(flag)
 
 
