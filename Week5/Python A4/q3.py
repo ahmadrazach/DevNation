@@ -2,7 +2,7 @@
 import random
 # ask user how may times the six-sided dice rolled
 roll_times = int(input("How many times would like to roll the dice? - "))
-
+lucky_event = 0
 #   for loop to run till the the times
 for i in range(roll_times):
     sum = 0
@@ -12,3 +12,7 @@ for i in range(roll_times):
         sum += no
         print(j+1, "st value :", no)
     print("Dice roll", i+1, "sum : ", sum)
+    if sum == 7:
+        lucky_event += 1
+
+print("\nYou rolled lucky seven", lucky_event, "time (s)!")
