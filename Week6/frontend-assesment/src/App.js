@@ -8,7 +8,8 @@ const App=()=> {
   const [isLoading, setIsLoading] = useState(false);
   //Add Data
   const [data, setData] = useState([]);
-
+    //taking the search Term
+    const [searchTerm,setSearchTerm]=useState('')
   //calling the function using useEffect
   useEffect(()=>{
 
@@ -53,10 +54,22 @@ const App=()=> {
           id="PName"
           autoComplete="off"
           //value={ProductData.PNAME}
-          //onChange={handleInputs}
+          onChange={e=>setSearchTerm(e.target.value)}
           placeholder='Search by name'
         />
-        {data && data.map((item, index) =>
+        {data && data
+        //checking if product name matches
+        .filter((product)=>{
+          if(searchTerm=="")
+          {
+            return product
+          }
+          else if(product.firstName.toLowerCase().includes(searchTerm.toLowerCase()) || product.lastName.toLowerCase().includes(searchTerm.toLowerCase())){
+            return product
+          }
+        })
+        //map function
+        .map((item, index) =>
         <div className='profile-card'>
           <div className='flex-col-img'>
             <img src={item.pic} alt='img'></img>
