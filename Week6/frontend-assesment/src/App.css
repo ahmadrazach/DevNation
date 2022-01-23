@@ -57,3 +57,11 @@
 .email-p {
   padding-top: 10px;
 }
+input {
+  border: none;
+  border-bottom: 1px solid grey;
+  color: grey;
+  height: 40px;
+  margin: 0 3%;
+  font-family: 'Raleway';
+}

@@ -47,6 +47,15 @@ const App=()=> {
 
     <div className="App">
      <div className='main-div'>
+        <input
+          type="text"
+          name="PName"
+          id="PName"
+          autoComplete="off"
+          //value={ProductData.PNAME}
+          //onChange={handleInputs}
+          placeholder='Search by name'
+        />
         {data && data.map((item, index) =>
         <div className='profile-card'>
           <div className='flex-col-img'>
