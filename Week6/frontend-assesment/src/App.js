@@ -26,18 +26,10 @@ const App=()=> {
   },[]);
 
   //finding average
-  //first finding sum
-  var sum = function(array) {
-    var total = 0;
-    for (var i=0; i<array.length; i++) {
-      total += array[i];
-    }
-    return total;
-  };
-  //then average
   var mean = function(array) {
-    var arraySum = sum(array);
-    return arraySum / array.length;
+    const avg=array.grades.reduce((sum, curr) => sum + Number(curr), 0) /array.grades.length;
+    return avg;
+    
   };
 
   if (isLoading) {
@@ -50,25 +42,26 @@ const App=()=> {
     var acc = document.getElementsByClassName("accordion");
   var i;
   
-  var displayblock=document.getElementById("nodisplay");
-  //displayblock.className="display"
-  var currentId = displayblock.id;
-   if (currentId == "display") { // Check the current class name
-      displayblock.id = "nodisplay";   // Set other class name
-   }
-   else if(currentId == "nodisplay"){
-    displayblock.id = "display";  
-   }
-    else {
-       displayblock.id = "display";  // Otherwise, use `second_name`
-   }
+ 
+
   
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
       this.classList.toggle("active");
       //console.log("chalo idhr",acc[i])
       //displayblock.className="display"
-     
+       //displayblock.className="display"
+       var displayblock=document.getElementById("nodisplay");
+        var currentId = displayblock.id;
+        if (currentId == "display") { // Check the current class name
+          displayblock.id = "nodisplay";   // Set other class name
+        }
+        else if(currentId == "nodisplay"){
+        displayblock.id = "display";  
+        }
+        else {
+            displayblock.id = "display";  // Otherwise, use `second_name`
+        }
       var panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
@@ -118,7 +111,7 @@ const App=()=> {
             <h2 key={index}>{item.firstName} {item.lastName} </h2>
             <p className='email-p'>Email : {item.email}</p>
             <p>Company : {item.company}</p>
-            <p>Skill : {mean(item.grades)}</p>
+            <p>Skill : {mean(item)}</p>
             <p>Average : {item.skill}</p>
             <div className='grade ' id="nodisplay">
               <p>Test 1 : {item.grades[index]}</p>
