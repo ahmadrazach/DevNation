@@ -43,6 +43,46 @@ const App=()=> {
   if (isLoading) {
     return <div>Loading...</div>;
   }
+
+  //clicking functionality
+  var changeButton=function()
+  {
+    var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  var displayblock=document.getElementById("nodisplay");
+  //displayblock.className="display"
+  var currentId = displayblock.id;
+   if (currentId == "display") { // Check the current class name
+      displayblock.id = "nodisplay";   // Set other class name
+   }
+   else if(currentId == "nodisplay"){
+    displayblock.id = "display";  
+   }
+    else {
+       displayblock.id = "display";  // Otherwise, use `second_name`
+   }
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      //console.log("chalo idhr",acc[i])
+      //displayblock.className="display"
+     
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        //document.getElementById("display").id='nodisplay';
+      } else 
+      {
+        //document.getElementById("nodisplay").id='display';
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+
+    });
+  }
+  }
+  
   return (
 
 
@@ -80,10 +120,23 @@ const App=()=> {
             <p>Company : {item.company}</p>
             <p>Skill : {mean(item.grades)}</p>
             <p>Average : {item.skill}</p>
+            <div className='grade ' id="nodisplay">
+              <p>Test 1 : {item.grades[index]}</p>
+              <p>Test 2 : {item.grades[index+1]}</p>
+              <p>Test 3 : {item.grades[index+2]}</p>
+              <p>Test 4 : {item.grades[index+3]}</p>
+              <p>Test 5 : {item.grades[index+4]}</p>
+              <p>Test 6 : {item.grades[index+5]}</p>
+              <p>Test 7 : {item.grades[index+6]}</p>
+              <p>Test 8 : {item.grades[index+7]}</p>
+            </div>
+
           </div>
+          <button class="accordion" onClick={changeButton}></button>
         </div>
         )}
     </div>
+
     </div>
   );
 }

@@ -71,3 +71,39 @@ input:focus {
   outline: none;
   border-bottom: 1px solid black;
 }
+.accordion {
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+  border: none;
+  background-color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: grey;
+}
+.active,
+.accordion:hover {
+  color: black;
+}
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2212';
+}
+.grade {
+  padding-top: 20px;
+  background-color: white;
+  transition: max-height 0.2s ease-out;
+}
+#nodisplay {
+  display: none;
+}
+.display {
+  display: block;
+}
