@@ -17,11 +17,15 @@
 .flex-col-img {
   display: flex;
   align-items: center;
+  width: 15%;
 }
 
 .flex-col-img img {
   border: 0.5px solid gainsboro;
   border-radius: 50%;
+  max-width: 500%;
+  min-width: 100%;
+  height: auto;
 }
 .App {
   background-color: whitesmoke;
@@ -36,7 +40,7 @@
 }
 .flex-col-content {
   line-height: 30px;
-  width: 100%;
+  width: 70%;
 }
 .flex-col-content h2 {
   font-size: xx-large;
