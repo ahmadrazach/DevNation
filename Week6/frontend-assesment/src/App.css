@@ -5,8 +5,8 @@
 * {
   padding: 0;
   margin: 0;
+  /*overflow: hidden;*/
 }
-
 .profile-card {
   display: flex;
   align-items: right;
@@ -25,11 +25,10 @@
   border-radius: 50%;
   max-width: 500%;
   min-width: 100%;
-  height: auto;
 }
 .App {
   background-color: whitesmoke;
-  padding: 10% 0;
+  padding: 6.1% 0;
 }
 .main-div {
   display: flex;
@@ -37,6 +36,8 @@
   background-color: white;
   margin: 0% 20%;
   border-radius: 10px;
+  overflow-y: scroll;
+  height: 600px;
 }
 .flex-col-content {
   line-height: 30px;
@@ -61,8 +62,8 @@ input {
   border: none;
   border-bottom: 1px solid grey;
   color: grey;
-  height: 40px;
-  margin: 0 3%;
+  height: 50px;
+  margin: 0 30px;
   font-family: 'Raleway';
 }
 textarea:focus,
