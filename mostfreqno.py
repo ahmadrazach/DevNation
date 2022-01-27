@@ -5,7 +5,7 @@ def most_frequent(List):
     counter = 0
     num = List[0]
 
-    for i in List:
+    for i in range(len(List)):
         curr_frequency = List.count(i)
         if(curr_frequency > counter):
             counter = curr_frequency
