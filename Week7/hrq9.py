@@ -1,14 +1,11 @@
 candles = [3, 2, 1, 3]
-count_candles = []
+counter = 0
+num = candles[0]
 for i in range(len(candles)):
-    for j in range(i+1, len(candles), 1):
-        if int(candles[j]) == int(candles[i]):
-            count_candles.append(1)
-            max_num = int(candles[i])
-            print("i's :", i, "j :", j, " ", candles[i])
-        else:
-            count_candles.append(0)
+    if(candles[i] > num):
+        num = candles[i]
+for i in range(len(candles)):
+    if candles[i] == num:
+        counter += 1
 
-print(max_num)
-print(count_candles)
-print(max(count_candles)+1)
+print(counter)
