@@ -34,7 +34,7 @@ def pageCount(n, p):
     page_turns_back = 0
     for i in range(n, 1, -1):
         # check if pages are two
-        if page_side == 2:
+        if page_side == 2 or i == n:
             page_turns_back += 1
 
             page_side = 0
@@ -49,7 +49,7 @@ def pageCount(n, p):
             # page_side+=1
             page_side += 1
         print("i : ", i)
-
+    print("Page Turns : front ", page_turns_front, " back : ", page_turns_back)
     return(min(page_turns_front, page_turns_back))
 
 
