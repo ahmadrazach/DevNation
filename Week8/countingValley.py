@@ -10,13 +10,14 @@
 def countingValleys(steps, path):
     count = 0
     # loop till all the path
-    for i in range(steps):
-        if path[i] == "D":
-            count -= 1
-        else:
-            count += 1
+    # for i in range(steps):
+    #     if path[i] == "D":
+    #         count -= 1
+    #     else:
+    #         count += 1
 
-    return int(count)
+    # return int(count)
+    print(path)
 
 
 print(countingValleys(8, "UDDUDUU"))
