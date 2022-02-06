@@ -6,6 +6,7 @@ const filterOption=document.querySelector(".filter-todo");
 //Event listeners
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
+filterOption.addEventListener("click",filterTodo);
 //Functions
 function addTodo(event){
     //Prevent form from submitting
@@ -54,4 +55,31 @@ function deleteCheck(e){
         todo.classList.toggle("completed");
 
     }
+}
+
+function filterTodo(e){
+    const todos=todoList.childNodes;
+    //console.log(todos);
+    todos.forEach(function(todo){
+        switch(e.target.value){
+            case "all":
+                todo.style.display="flex";
+                break;
+            case "completed":
+                if(todo.classList.contains('completed')){
+                    todo.style.display="flex";
+                }
+                else{
+                    todo.style.display="none";
+                }
+                break;
+            case "uncompleted":
+                if(!todo.classList.contains('completed')){
+                    todo.style.display="flex";
+                }
+                else{
+                    todo.style.display="none";
+                }
+        }
+    });
 }
