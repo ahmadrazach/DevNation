@@ -4,9 +4,11 @@ const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const filterOption=document.querySelector(".filter-todo");
 //Event listeners
+document.addEventListener("DOMContentLoaded",getTodos);
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click",filterTodo);
+
 //Functions
 function addTodo(event){
     //Prevent form from submitting
@@ -100,7 +102,6 @@ function saveLocalTodos(todo){
     localStorage.setItem("todos",JSON.stringify(todos));
 }
 function getTodos(){
-    let todos;
       //check if already in there
       let todos;
       if(localStorage.getItem("todos")===null){
@@ -114,11 +115,9 @@ function getTodos(){
         todoDiv.classList.add("todo");
         //Create LI
         const newTodo=document.createElement('li');
-        newTodo.innerText=todoInput.value;
+        newTodo.innerText=todo;
         newTodo.classList.add("todo-item");
-        todoDiv.appendChild(newTodo);
-        //Add todo to localstorage
-        saveLocalTodos(todoInput.value);
+        todoDiv.appendChild(newTodo);;
         //Check mark button
         const completedButton=document.createElement("button");
         completedButton.innerHTML='<i class="fas fa-check"></i>';
