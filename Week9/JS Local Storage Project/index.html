@@ -21,14 +21,14 @@
         <legend>Insert Data </legend>
         <input type="text" id="inpKey" placeholder="Enter Key...">
         <input type="text" id="inpValue" placeholder="Enter Value...">
-        <button type="button" name="button"></button>
+        <button type="button" id="btnInsert">Insert Data</button>
     </fieldset>
     <fieldset>
         <legend>Local Storage</legend>
-        <div class="IsOutput"></div>
+        <div id="IsOutput"></div>
     </fieldset>
     <script type="text/javascript">
-        // localStorage.clear();
+        //localStorage.clear();
         // //setting up an item in local storage
         // localStorage.setItem('age', '25');
         // //getting an item from local storage
@@ -46,7 +46,27 @@
         const inpKey=document.getElementById('inpKey');
         const inpValue=document.getElementById('inpValue');
         const btnInsert=document.getElementById('btnInsert');
-        const IsOutput=document.querySelector('IsOutput');
+        const IsOutput=document.getElementById('IsOutput');
+
+        btnInsert.onclick=function(){
+            const key=inpKey.value;
+            const value=inpValue.value;
+            if(key && value){
+                localStorage.setItem(key, value);
+                location.reload();
+           
+            }
+        }
+
+        for(let i=0;i<localStorage.length;i++){
+            const key=localStorage.key(i);
+            const value=localStorage.getItem(key);
+            IsOutput.innerHTML+=`${key} : ${value} <br>`;
+        }
+        // btnInsert.addEventListener('click', function(){
+        //     localStorage.setItem(inpKey.value, inpValue.value);
+        //     IsOutput.innerHTML=`<p>${inpKey.value} : ${inpValue.value}</p>`;
+        // });
     </script>
 </body>
 </html>
