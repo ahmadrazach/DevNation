@@ -6,11 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Storage - Javascript -dcode</title>
 </head>
+<style media="screen">
+    input,button{
+        padding: 7px;
+        height: 40px;
+    }
+    fieldset{
+        margin-bottom: 20px;
+    }
+</style>
 <body>
+    <h2 id="title">Local Storage - Javascript - dcode</h2>
+    <fieldset>
+        <legend>Insert Data </legend>
+        <input type="text" id="inpKey" placeholder="Enter Key...">
+        <input type="text" id="inpValue" placeholder="Enter Value...">
+        <button type="button" name="button"></button>
+    </fieldset>
+    <fieldset>
+        <legend>Local Storage</legend>
+        <div class="IsOutput"></div>
+    </fieldset>
     <script type="text/javascript">
-        localStorage.clear();
-       //setting up an item in local storage
-        localStorage.setItem('name', 'Ahmed');
+        // localStorage.clear();
+        // //setting up an item in local storage
+        // localStorage.setItem('age', '25');
+        // //getting an item from local storage
+        // console.log(localStorage.getItem('age'));
+        // //setting up an object in local storage
+        // localStorage.setItem('user', JSON.stringify({
+        //     name: 'Ahmed',
+        //     age: 25
+        // }));
+        // //getting an object from local storage
+        // console.log(JSON.parse(localStorage.getItem('user')));
+        // console.log(localStorage.key(1));
+
+        // FORMS
+        const inpKey=document.getElementById('inpKey');
+        const inpValue=document.getElementById('inpValue');
+        const btnInsert=document.getElementById('btnInsert');
+        const IsOutput=document.querySelector('IsOutput');
     </script>
 </body>
 </html>
