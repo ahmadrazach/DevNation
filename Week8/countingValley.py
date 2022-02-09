@@ -8,16 +8,24 @@
 #
 
 def countingValleys(steps, path):
-    count = 0
+    unit = 0
+    valleys_traversed = 0
     # loop till all the path
-    # for i in range(steps):
-    #     if path[i] == "D":
-    #         count -= 1
-    #     else:
-    #         count += 1
+    for i in path:
+        # for i in range(steps):
 
-    # return int(count)
-    print(path)
+        #     if path[i] == "D":
+        if i == "D":
+            #         unit -= 1
+            unit -= 1
+        #     else:
+        else:
+            #         unit += 1
+            unit += 1
+        if unit == 0 and i == "U":
+            valleys_traversed += 1
+
+    return(int(valleys_traversed))
 
 
-print(countingValleys(8, "UDDUDUU"))
+print(countingValleys(8, "DUDDDUUDUU"))
