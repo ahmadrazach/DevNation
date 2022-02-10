@@ -11,35 +11,33 @@ body {
   flex-wrap: wrap;
   margin: 0;
 }
-notes {
+.notes {
   width: 500px;
   height: 500px;
   background-color: #fff;
   margin: 20px;
 }
-/* 
-.notes .tools
-    backgroundclr #9ec862
-    df
-    jc:flex-end
-    padding:0.5rem
- 
-.notes .tools .button
-    bd transparent
-    border none
-    color #fff
-    fonts 1rem
-    ml 0.5rem
-
-.main .notes
-    w 100%
-    h 100%
-    
-.notes textarea
-    w 100%
-    h qoo%
-    b none
-    font fam inherit
-    outline:none
-    
-*/
+.notes .tools {
+  background-color: #9ec862;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.notes .tools button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+.main .notes {
+  weight: 100%;
+  height: 100%;
+}
+.notes textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: inherit;
+  outline: none;
+}
