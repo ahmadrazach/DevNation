@@ -5,7 +5,41 @@
   box-sizing: border-box;
 }
 body {
-  /* background-color: #7BDAF3; */
+  background-color: #7bdaf3;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
 }
+notes {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  margin: 20px;
+}
+/* 
+.notes .tools
+    backgroundclr #9ec862
+    df
+    jc:flex-end
+    padding:0.5rem
+ 
+.notes .tools .button
+    bd transparent
+    border none
+    color #fff
+    fonts 1rem
+    ml 0.5rem
+
+.main .notes
+    w 100%
+    h 100%
+    
+.notes textarea
+    w 100%
+    h qoo%
+    b none
+    font fam inherit
+    outline:none
+    
+*/
